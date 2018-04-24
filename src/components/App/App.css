@@ -1,0 +1,14 @@
+.App {
+  margin: 0px; 
+  padding: 50px; 
+  display: flex; 
+  justify-content: space-around; 
+}
+
+@media screen and (max-width: 980px) {
+  .App {
+    margin: 0px; 
+    padding: 50px; 
+    display: block; 
+  }
+}

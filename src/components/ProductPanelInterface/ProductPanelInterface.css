@@ -1,0 +1,75 @@
+.interface-button {
+    width: calc(25%); 
+    height: 70px;
+    margin: 0px;  
+    background: rgb(180, 180, 211);
+    display: inline-block; 
+    transition: 0.5s; 
+    cursor: pointer;  
+}
+
+.interface-button:hover {
+    background: rgb(121, 121, 139);
+}
+.interface-button-alt:hover {
+    background: rgb(121, 121, 139);
+}
+
+.interface-button-alt {
+    width: calc(25%); 
+    height: 70px;
+    margin: 0px;  
+    background: rgb(205, 205, 233);
+    display: inline-block; 
+    cursor: pointer; 
+    transition: 0.5s;   
+}
+
+.ProductPanelInterface button {
+    width: 100%; 
+    padding: 20px; 
+    color: white; 
+    background-color: rgb(88, 133, 88); 
+    text-align: center; 
+    font-size: 18px; 
+    margin: 0px; 
+    transition: 0.5s; 
+    cursor: pointer;
+    border: 0px;   
+}
+
+.ProductPanelInterface button:hover {
+    background-color: rgb(80, 99, 80); 
+}
+
+@media screen and (max-width: 980px) {
+    .ProductPanelInterface {
+        width: 350px; 
+    }
+    .ProductPanelInterface button {
+        margin-top: 50px; 
+        transition: 0s; 
+    }
+    .interface-button {
+        transition: 0s; 
+    }
+    .interface-button-alt {
+        transition: 0s; 
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ProductPanelInterface {
+        width: 150px; 
+    }
+    .ProductPanelInterface button {
+        margin-top: 30px; 
+        transition: 0s; 
+    }
+    .interface-button-alt {
+        height: 30px;
+    }
+    .interface-button {
+        height: 30px; 
+    }
+}

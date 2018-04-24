@@ -1,0 +1,65 @@
+.A { 
+    width: 100%; 
+}
+
+.A h3 h2 {
+    text-align: center; 
+}
+
+.A-description {
+    text-align: center; 
+}
+
+.center {
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.A button {
+    display: inline-block; 
+    text-align: center; 
+    margin: 20px auto 30px auto; 
+    background-color: rgb(63, 63, 88);
+    width: 60%; 
+    padding: 20px; 
+    color: white; 
+    font-family: arial; 
+    font-size: 18px;  
+    border: 0px; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;   
+}
+
+.A button:hover {
+    background-color: rgb(42, 42, 54);
+}
+
+@media screen and (max-width: 980px) {
+    .A {
+        display: inline-block; 
+        width: 50%; 
+    }
+    .A h2 {
+        margin-top: 20px;
+        font-size: 20px;   
+    }
+    .stars {
+        display: none; 
+    }
+    .A button { 
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .A h2 {
+        margin-top: 0px;
+        font-size: 16px;   
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+
+}

@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(34, 34, 34); 
+}
+
+.slider {
+  background: url('./images/tennis.jpg'); 
+  height: 40vh; 
+  width: 100%; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.slider-mini {
+  background: url('./images/tennis.jpg'); 
+  display: none; 
+}
+
+.description {
+  color: rgb(75, 75, 75);
+  font-family: arial;
+  padding: 10px 0px;  
+  line-height: 120%; 
+}
+
+.arrow-container {
+  width: 50px; 
+  height: 60px; 
+  background-color: rgba(1,1,1,0.2);
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  transition: 0.5s; 
+  cursor: pointer;  
+}
+
+.arrow-container:hover { 
+  background-color: rgba(1,1,1,0.4);
+}
+
+@media screen and (max-width: 980px) {
+  .slider {
+     display: none;        
+  } 
+  .slider-mini {
+    flex: 1; 
+    width: 30%; 
+    /* width: 250px;  */
+    height: 180px; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background: url('./images/tennis.jpg');        
+  } 
+  .description {
+    margin: 0px; 
+    padding: 0px 10px; 
+    flex: 1;
+    width: 100%;   
+    background: red; 
+    display: inline-block; 
+  }
+  h2 {
+    margin-top: 20px;
+    font-size: 20px;   
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* .slider-mini {
+    width: 120px; 
+    height: 120px;        
+  } */
+  h2 {
+    margin-top: 0px;
+    font-size: 16px;   
+  }
+}
